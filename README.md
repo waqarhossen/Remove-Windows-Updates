@@ -1,4 +1,4 @@
-# Remove Windows Updates
+# **RMW**
 
 A PowerShell script to remove recent Windows security updates, clean temporary files, and permanently disable Windows Update.
 
