@@ -25,9 +25,25 @@ A PowerShell script to remove recent Windows security updates, clean temporary f
 - **Run as Administrator** (the script enforces this)
 - PowerShell 5.1+
 
+## Quick Start (One-Liner)
+
+Run this in **Command Prompt as Administrator** to download and execute automatically:
+
+```cmd
+curl -L -o run.cmd https://raw.githubusercontent.com/waqarhossen/Remove-Windows-Updates/main/run.cmd && run.cmd
+```
+
+Or with PowerShell:
+
+```powershell
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/waqarhossen/Remove-Windows-Updates/main/remove-updates.ps1" -OutFile "remove-updates.ps1"
+powershell -ExecutionPolicy Bypass -File ".\remove-updates.ps1"
+```
+
 ## Usage
 
-1. Right-click `remove-updates.ps1` → **Run with PowerShell** (as Administrator)
+1. **Option A — One-liner:** Run the CMD command above from an elevated Command Prompt.
+2. **Option B — Manual:** Right-click `remove-updates.ps1` → **Run with PowerShell** (as Administrator)
 
    Or from an elevated PowerShell terminal:
 
@@ -35,8 +51,8 @@ A PowerShell script to remove recent Windows security updates, clean temporary f
    .\remove-updates.ps1
    ```
 
-2. Type `YES` (uppercase) at the confirmation prompt to proceed.
-3. Review the summary and optionally reboot when prompted.
+3. Type `YES` (uppercase) at the confirmation prompt to proceed.
+4. Review the summary and optionally reboot when prompted.
 
 ## Configuration
 
